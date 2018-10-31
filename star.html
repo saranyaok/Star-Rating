@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+.rating {
+
+    unicode-bidi: bidi-override;
+   font-size:300%;
+   color: #D3D3D3;
+
+   
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+
+   
+   
+   position: absolute;
+   
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  
+}
+.red {
+    color: red;
+	  unicode-bidi: bidi-override;
+}
+.orange {
+    color: orange;
+	  unicode-bidi: bidi-override;
+}
+.yellow {
+    color: yellow;
+	  unicode-bidi: bidi-override;
+}
+.blue {
+    color: blue;
+	  unicode-bidi: bidi-override;
+}
+.green{
+    color: green;
+	  unicode-bidi: bidi-override;
+}
+
+</style>
+<body><div class="rating">
+<span id="myH2" onclick="myFunction1()">&#9733;
+
+</span><span id="myP" onclick="myFunction2()">&#9733;
+
+</span><span id="myP2" onclick="myFunction3()">&#9733;
+
+</span><span id="myDiv" onclick="myFunction4()">&#9733;
+
+</span><span id="myDiv1" onclick="myFunction5()">&#9733;
+
+</span><span id="myDiv2" >
+</span>
+</div>
+<br>
+
+
+<script>
+function myFunction1() {
+
+    document.getElementById("myH2").className = "red";
+    document.getElementById("myP").className = "none";
+    document.getElementById("myP2").className = "none";
+    document.getElementById("myDiv").className = "none";
+	document.getElementById("myDiv1").className ="none";
+document.getElementById("myDiv2").className ="none";
+
+}
+function myFunction2() {
+
+    document.getElementById("myH2").className = "orange";
+    document.getElementById("myP").className= "orange";
+    document.getElementById("myP2").className = "none";
+    document.getElementById("myDiv").className = "none";
+	document.getElementById("myDiv1").className ="none";
+	document.getElementById("myDiv2").className ="none";
+
+}
+function myFunction3() {
+
+    document.getElementById("myH2").className = "yellow";
+    document.getElementById("myP").className = "yellow";
+    document.getElementById("myP2").className = "yellow";
+    document.getElementById("myDiv").className = "none";
+	document.getElementById("myDiv1").className ="none";
+	document.getElementById("myDiv2").className ="none";
+
+}
+function myFunction4() {
+document.getElementById("myDiv1").className ="none";
+    document.getElementById("myH2").className = "blue";
+    document.getElementById("myP").className = "blue";
+    document.getElementById("myP2").className = "blue";
+    document.getElementById("myDiv").className = "blue";
+	document.getElementById("myDiv2").className ="none";
+
+	
+}
+function myFunction5() {
+
+   document.getElementById("myDiv2").className ="green";
+    document.getElementById("myH2").className = "green";
+    document.getElementById("myP").className = "green";
+    document.getElementById("myP2").className = "green";
+    document.getElementById("myDiv").className = "green";
+	 document.getElementById("myDiv1").className = "green";
+ document.getElementById("myDiv2").className = "none";
+}
+
+</script>
+
+</body>
+</html>
